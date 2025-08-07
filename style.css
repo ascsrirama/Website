@@ -1,0 +1,129 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV BAR */
+.topnav {
+  background-color: #2563eb; /* blue-600 */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f3f4f6; /* gray-100 */
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 4px 4px 0 0;
+  margin-right: 4px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #1e40af; /* blue-800 */
+  color: #fff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: transparent;
+  color: #fff; /* White text for visibility */
+  border-bottom: 3px solid #ffffff; /* pink-500 */
+  font-weight: 600;
+}
+
+/* Body and container */
+body {
+  font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f3f4f6; /* gray-100 */
+  color: #222;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Header */
+header {
+  background-color: #1e293b; /* slate-800 */
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 16px rgba(30,41,59,0.08);
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+main section {
+  margin: 2rem 0;
+}
+
+h2 {
+  color: #2563eb; /* blue-600 */
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.project {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #10b981;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1e293b; /* slate-800 */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(30,41,59,0.08);
+}
+
+.footnote {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left-align {
+  text-align: left;
+  margin-left: 10px;
+}
