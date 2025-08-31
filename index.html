@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rama Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
         body {
             font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
@@ -52,6 +52,29 @@
             filter: none;
         }
 
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s;
+            min-height: 120px;
+            text-align: center;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
         footer {
             color: #b3b3cc;
             font-size: 0.95rem;
@@ -81,16 +104,58 @@
     <!-- Circular Menu -->
     <ul class="menu">
         <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
-        <li style="--i:0"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-        <li style="--i:1"><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
-        <li style="--i:2"><a href="#"><ion-icon name="briefcase-outline"></ion-icon></a></li>
-        <li style="--i:3"><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
-        <li style="--i:4"><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-        <li style="--i:5"><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li style="--i:6"><a href="#"><ion-icon name="star-outline"></ion-icon></a></li>
-        <li style="--i:7"><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
+        <li style="--i:0"><a href="#home"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li style="--i:1"><a href="#about"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li style="--i:2"><a href="#projects"><ion-icon name="briefcase-outline"></ion-icon></a></li>
+        <li style="--i:3"><a href="#contact"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li style="--i:4"><a href="#github"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li style="--i:5"><a href="#linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li style="--i:6"><a href="#skills"><ion-icon name="star-outline"></ion-icon></a></li>
+        <li style="--i:7"><a href="#settings"><ion-icon name="settings-outline"></ion-icon></a></li>
         <div class="indicator"></div>
     </ul>
+
+    <main id="main-content">
+        <section id="home" class="content-section active">
+            <h2>Welcome</h2>
+            <p>This is the home section of my portfolio.</p>
+        </section>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>Short intro, background, etc.</p>
+        </section>
+        <section id="projects" class="content-section">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1: Portfolio Website</li>
+                <li>Project 2: Cool App</li>
+            </ul>
+        </section>
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p>Email: yourname@example.com</p>
+        </section>
+        <section id="github" class="content-section">
+            <h2>GitHub</h2>
+            <p><a href="https://github.com/ascsrirama" target="_blank">github.com/ascsrirama</a></p>
+        </section>
+        <section id="linkedin" class="content-section">
+            <h2>LinkedIn</h2>
+            <p><a href="https://linkedin.com/in/ascsrirama" target="_blank">linkedin.com/in/ascsrirama</a></p>
+        </section>
+        <section id="skills" class="content-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Web Development</li>
+            </ul>
+        </section>
+        <section id="settings" class="content-section">
+            <h2>Settings</h2>
+            <p>Coming soon...</p>
+        </section>
+    </main>
 
     <footer>
         © 2025 Sriramachandra Anumanchipalli.
@@ -105,13 +170,20 @@
         }
         const list = document.querySelectorAll('.menu li');
 
-        function activeLink() {
+        function activeLink(e) {
+            e.preventDefault();
             list.forEach((item) => item.classList.remove('active'));
             this.classList.add('active');
+            // Show/hide sections
+            const target = this.querySelector('a').getAttribute('href').replace('#', '');
+            document.querySelectorAll('.content-section').forEach(sec => {
+                sec.classList.toggle('active', sec.id === target);
+            });
         }
         list.forEach((item) => item.addEventListener('click', activeLink));
-        // Optionally, activate the first menu item on load
+        // Activate the first menu item and section on load
         list[0].classList.add('active');
+        document.querySelectorAll('.content-section')[0].classList.add('active');
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
