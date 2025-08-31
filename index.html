@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rama Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test.css" />
+    <style>
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background: #222237;
+            color: #fff;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile p {
+            color: #b3b3cc;
+            margin-bottom: 1.5rem;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .socials a img {
+            vertical-align: middle;
+            filter: grayscale(0.2) brightness(1.2);
+            transition: filter 0.2s;
+        }
+
+        .socials a:hover img {
+            filter: none;
+        }
+
+        footer {
+            color: #b3b3cc;
+            font-size: 0.95rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <h1>Sriramachandra (Rama) Anumanchipalli</h1>
+        <p>Computer Engineer & Web Developer</p>
+        <div class="socials">
+            <a href="mailto:yourname@example.com" title="Email" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/40/29fd53/new-post.png" alt="Email">
+            </a>
+            <a href="https://github.com/ascsrirama" title="GitHub" target="_blank">
+                <img src="https://img.icons8.com/ios-glyphs/40/29fd53/github.png" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/ascsrirama" title="LinkedIn" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/40/29fd53/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+
+    <!-- Circular Menu -->
+    <ul class="menu">
+        <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li style="--i:1"><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li style="--i:2"><a href="#"><ion-icon name="briefcase-outline"></ion-icon></a></li>
+        <li style="--i:3"><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li style="--i:4"><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li style="--i:5"><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li style="--i:6"><a href="#"><ion-icon name="star-outline"></ion-icon></a></li>
+        <li style="--i:7"><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
+        <div class="indicator"></div>
+    </ul>
+
+    <footer>
+        © 2025 Sriramachandra Anumanchipalli.
+    </footer>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        menuToggle.onclick = function () {
+            menu.classList.toggle('active')
+            menuToggle.classList.toggle('active')
+        }
+        const list = document.querySelectorAll('.menu li');
+
+        function activeLink() {
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => item.addEventListener('click', activeLink));
+        // Optionally, activate the first menu item on load
+        list[0].classList.add('active');
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
