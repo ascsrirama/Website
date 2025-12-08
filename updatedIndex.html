@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rama Anumanchipalli | Computer Systems Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="updatedCSS.css" />
+</head>
+
+<body>
+    <!-- Floating Navigation Menu -->
+    <ul class="menu">
+        <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0"><a href="#home" data-section="home"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li style="--i:1"><a href="#about" data-section="about"><ion-icon name="person-outline"></ion-icon></a></li>
+        <li style="--i:2"><a href="#projects" data-section="projects"><ion-icon name="briefcase-outline"></ion-icon></a></li>
+        <li style="--i:3"><a href="#skills" data-section="skills"><ion-icon name="code-slash-outline"></ion-icon></a></li>
+        <li style="--i:4"><a href="#experience" data-section="experience"><ion-icon name="trophy-outline"></ion-icon></a></li>
+        <li style="--i:5"><a href="#contact" data-section="contact"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li style="--i:6"><a href="https://github.com/ascsrirama" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li style="--i:7"><a href="https://linkedin.com/in/ascsrirama" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <div class="indicator"></div>
+    </ul>
+
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="content-section active hero-section">
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="hero-title glitch" data-text="RAMA ANUMANCHIPALLI">RAMA ANUMANCHIPALLI</h1>
+                </div>
+                <div class="hero-subtitle">
+                    <span class="typing-text">Computer Systems Engineer</span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-tagline">BE(Hons) • University of Auckland</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Passion</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="cta-button primary">View Projects</a>
+                    <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <ion-icon name="school-outline"></ion-icon>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Pursuing Computer Systems Engineering at the University of Auckland with a focus on embedded systems, circuit design, and software development.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <ion-icon name="rocket-outline"></ion-icon>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>Driven by solving complex technical challenges at the intersection of hardware and software, from microcontroller programming to PCB design.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <ion-icon name="bulb-outline"></ion-icon>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Constantly exploring emerging technologies and applying theoretical knowledge to real-world applications through hands-on project work.</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <p>I'm a Computer Systems Engineering student with expertise spanning embedded systems development, circuit analysis, PCB design, and full-stack software engineering. My academic journey includes hands-on work with ATmega328P and ESP32 microcontrollers, Altium Designer for PCB development, and various programming languages.</p>
+                <p>Currently seeking opportunities to apply my technical skills in challenging internship and professional roles where I can contribute to innovative projects while continuing to grow as an engineer.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </div>
+                    <h3>AC Power Measurement System</h3>
+                    <p>Designed and implemented a precision power measurement system using ATmega328P microcontroller with synchronized ADC sampling, Riemann sum calculations, and real-time data processing for accurate power analysis.</p>
+                    <div class="project-tags">
+                        <span class="tag">Embedded C</span>
+                        <span class="tag">ATmega328P</span>
+                        <span class="tag">ADC</span>
+                        <span class="tag">Signal Processing</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </div>
+                    <h3>Face-Tracking Servo System</h3>
+                    <p>Developed an intelligent face-tracking system using ESP32-CAM with OpenCV integration, featuring real-time computer vision processing and precise servo motor control for automated camera tracking.</p>
+                    <div class="project-tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <ion-icon name="hardware-chip-outline"></ion-icon>
+                    </div>
+                    <h3>Custom PCB Design Projects</h3>
+                    <p>Created multiple PCB designs using Altium Designer, including LED driver circuits, voltage regulation systems, and embedded microcontroller boards with proper component placement and design rule checking.</p>
+                    <div class="project-tags">
+                        <span class="tag">Altium Designer</span>
+                        <span class="tag">PCB Design</span>
+                        <span class="tag">Circuit Analysis</span>
+                        <span class="tag">ERC/DRC</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
+                    <h3>Software Engineering Applications</h3>
+                    <p>Built various software applications using JavaFX, Scene Builder, and web technologies, demonstrating proficiency in full-stack development, GUI design, and user experience optimization.</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">Web Dev</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><ion-icon name="hardware-chip-outline"></ion-icon> Embedded Systems</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">ATmega328P</div>
+                        <div class="skill-badge">ESP32</div>
+                        <div class="skill-badge">Raspberry Pi</div>
+                        <div class="skill-badge">Arduino IDE</div>
+                        <div class="skill-badge">PlatformIO</div>
+                        <div class="skill-badge">C/C++</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><ion-icon name="calculator-outline"></ion-icon> Circuit Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">Altium Designer</div>
+                        <div class="skill-badge">PCB Design</div>
+                        <div class="skill-badge">Analog Circuits</div>
+                        <div class="skill-badge">Digital Logic</div>
+                        <div class="skill-badge">Power Electronics</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><ion-icon name="code-slash-outline"></ion-icon> Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">Python</div>
+                        <div class="skill-badge">Java</div>
+                        <div class="skill-badge">C/C++</div>
+                        <div class="skill-badge">JavaScript</div>
+                        <div class="skill-badge">HTML/CSS</div>
+                        <div class="skill-badge">SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><ion-icon name="layers-outline"></ion-icon> Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">OpenCV</div>
+                        <div class="skill-badge">JavaFX</div>
+                        <div class="skill-badge">Git/GitHub</div>
+                        <div class="skill-badge">Scene Builder</div>
+                        <div class="skill-badge">VS Code</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Experience & <span class="highlight">Achievements</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>GDGC Sponsorship Team Member</h3>
+                        <p>Contributing to event planning, sponsor relations, and community engagement for Google Developer Group Community at the University of Auckland.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Deloitte Technology Internship Shortlist</h3>
+                        <p>Shortlisted for competitive Deloitte Technology & Transformation internship program, demonstrating strong technical and professional capabilities.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Ongoing</span>
+                        <h3>Academic Excellence</h3>
+                        <p>Consistently demonstrating strong performance across multiple technical courses including embedded systems, circuit design, algorithms, and software engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p class="contact-description">I'm always open to discussing new opportunities, interesting projects, or potential collaborations. Feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:ascsrirama@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>ascsrirama@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ascsrirama" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>github.com/ascsrirama</p>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/ascsrirama" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/ascsrirama</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sriramachandra Anumanchipalli • Designed & Built with passion</p>
+    </footer>
+
+    <script>
+        // Menu functionality
+        let menuToggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        const list = document.querySelectorAll('.menu li');
+
+        // Menu item click logic
+        function activeLink(e) {
+            const link = this.querySelector('a');
+            const target = link.getAttribute('data-section');
+            
+            // Skip if it's an external link
+            if (!target) return;
+            
+            e.preventDefault();
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Show/hide sections
+            document.querySelectorAll('.content-section').forEach(sec => {
+                sec.classList.toggle('active', sec.id === target);
+            });
+            
+            // Close menu after selection
+            menu.classList.remove('active');
+        }
+
+        list.forEach((item) => item.addEventListener('click', activeLink));
+        list[0].classList.add('active');
+
+        // Toggle logic
+        menuToggle.onclick = function () {
+            menu.classList.toggle('active');
+        };
+
+        // Typing effect
+        const typingText = document.querySelector('.typing-text');
+        const phrases = ['Computer Systems Engineer', 'Embedded Systems Developer', 'PCB Designer', 'Software Engineer'];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(typeEffect, 500);
+            } else {
+                setTimeout(typeEffect, isDeleting ? 50 : 100);
+            }
+        }
+
+        // Start typing effect after page load
+        setTimeout(typeEffect, 1000);
+
+        // Smooth scroll for CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#') && href.length > 1) {
+                    e.preventDefault();
+                    const target = href.substring(1);
+                    
+                    // Find the corresponding menu item and trigger it
+                    list.forEach(item => {
+                        const link = item.querySelector('a');
+                        if (link.getAttribute('data-section') === target) {
+                            item.click();
+                        }
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .about-card, .timeline-item, .skill-category').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
